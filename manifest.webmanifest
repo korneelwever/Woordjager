@@ -1,0 +1,10 @@
+{
+  "name": "Woordjager - Spelling voor groep 6",
+  "short_name": "Woordjager",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#101827",
+  "theme_color": "#111827",
+  "lang": "nl",
+  "icons": []
+}
