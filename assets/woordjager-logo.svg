@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="112" fill="#101827"/>
+<rect x="22" y="22" width="468" height="468" rx="98" fill="#0b1d3b" opacity=".55"/>
+<path d="M205 83 C390 145 390 367 205 429" fill="none" stroke="#8b451f" stroke-width="29" stroke-linecap="round"/>
+<path d="M205 83 C390 145 390 367 205 429" fill="none" stroke="#d9823b" stroke-width="17" stroke-linecap="round"/>
+<path d="M205 83 L205 429" fill="none" stroke="#f8f3df" stroke-width="5" stroke-linecap="round"/>
+<g transform="rotate(-0 256 256)">
+ <rect x="99" y="225" width="290" height="62" rx="12" fill="#087f69"/>
+ <rect x="99" y="225" width="290" height="30" rx="12" fill="#55e6b6"/>
+ <path d="M389 225 L448 256 L389 287 L402 256 Z" fill="#f1d0a6"/>
+ <path d="M421 242 L448 256 L421 270 Z" fill="#17253d"/>
+ <rect x="73" y="225" width="29" height="62" rx="7" fill="#9aa9bc"/>
+ <rect x="49" y="225" width="25" height="62" rx="8" fill="#ff8eb4"/>
+ <path d="M56 235 Q61 228 68 235" fill="none" stroke="#ffc0d3" stroke-width="5" stroke-linecap="round"/>
+</g>
+<path d="M457 210 l14 -14 M466 256 h20 M457 302 l14 14" stroke="#55e6b6" stroke-width="9" stroke-linecap="round"/>
+</svg>
