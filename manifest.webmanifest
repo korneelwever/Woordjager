@@ -4,7 +4,9 @@
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#101827",
-  "theme_color": "#111827",
+  "theme_color": "#101827",
   "lang": "nl",
-  "icons": []
+  "icons": [
+    { "src": "assets/woordjager-logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
 }
