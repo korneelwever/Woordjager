@@ -16,7 +16,6 @@ jobs:
           java-version: '17'
       - uses: android-actions/setup-android@v3
         with:
-          # This action splits package names on spaces, not commas.
           packages: 'platform-tools platforms;android-35 build-tools;35.0.0'
       - uses: gradle/actions/setup-gradle@v4
         with:
@@ -24,6 +23,21 @@ jobs:
       - name: Build debug APK
         working-directory: android
         run: gradle assembleDebug
+      - name: Validate APK
+        shell: bash
+        run: |
+          set -euxo pipefail
+          APK="android/app/build/outputs/apk/debug/app-debug.apk"
+          test -s "$APK"
+          ls -lh "$APK"
+          file "$APK"
+          unzip -t "$APK"
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose "$APK"
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK"
+          echo "APK contents:"
+          unzip -l "$APK"
+          echo "Packaged game asset:"
+          unzip -p "$APK" assets/index.html | wc -c
       - uses: actions/upload-artifact@v4
         with:
           name: woordjager-debug-apk
