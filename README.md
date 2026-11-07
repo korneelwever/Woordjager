@@ -1,9 +1,9 @@
 # Woordjager
 
-A small offline-first Dutch spelling game for a groep 6 child. The first prototype has a curated starter bank of everyday words, English meanings, Dutch example sentences, and spelling hints.
+A small offline-first Dutch spelling game for kids in primary school (basisschool). The first prototype has a curated starter bank of everyday words, English meanings, Dutch example sentences, and spelling hints.
 
 ## Play immediately
-Open `index.html` in a browser. For the installable PWA experience, serve this folder over HTTPS or localhost so the service worker can cache it. On Android Chrome, use **Install app** or **Add to Home screen**.
+Just head to woordjager.vercel.app or, Open `index.html` in a browser. For the installable PWA experience, serve this folder over HTTPS or localhost so the service worker can cache it. On Android Chrome, use **Install app** or **Add to Home screen**.
 
 ## Build the Android APK
 The Android WebView wrapper is in `android/`. This environment did not have the Android SDK/Gradle installed, so the APK itself could not be compiled here. The included GitHub Actions workflow builds a debug APK in the cloud:
@@ -16,6 +16,6 @@ The Android WebView wrapper is in `android/`. This environment did not have the 
 The debug APK is for testing, not Play Store distribution. It is offline and saves progress locally on the device.
 
 ## Notes
-- The word bank is a starter set, not an official or exhaustive groep 6 curriculum list.
+- The word bank is a starter set, not an official or exhaustive curriculum list.
 - Some word difficulty varies by school and spelling method. Ask the teacher for recent test words to align future sets with classwork.
 - Progress is stored in local browser/app storage. Clearing app data will reset it.
