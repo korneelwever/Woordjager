@@ -1,13 +1,6 @@
 name: Build Android APK
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'android/**'
-      - 'index.html'
-      - 'manifest.webmanifest'
-      - 'assets/**'
-      - '.github/workflows/build-apk.yml'
 jobs:
   build:
     runs-on: ubuntu-latest
